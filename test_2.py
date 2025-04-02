@@ -3,7 +3,7 @@ import numpy as np
 from ultralytics import YOLO
 from sort import Sort
 
-cap = cv2.VideoCapture('/Users/alexandrekoiyama/Desktop/Object_Tracking/12364947_1920_1080_30fps.mp4')
+cap = cv2.VideoCapture('12364947_1920_1080_30fps.mp4')
 
 model = YOLO('yolov8m.pt')
 tracker = Sort(max_age=60*3, min_hits=3, iou_threshold=0.5)
